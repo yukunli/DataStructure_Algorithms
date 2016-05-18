@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LoanSys - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\User\AppData\Local\Temp\RSP52E1.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/LoanSys.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\User\Desktop\LYK_LoanSys\LYK_LoanSys\LYK_LoanSys\src\Loan.cpp"
+]
+Creating command line "cl.exe @C:\Users\User\AppData\Local\Temp\RSP52E1.tmp" 
+Creating temporary file "C:\Users\User\AppData\Local\Temp\RSP52E2.tmp" with contents
+[
+lib/SocketApi.lib lib/LoanLib.lib lib/ExamApi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/LoanSys.pdb" /debug /machine:I386 /nodefaultlib:"LIBC" /out:"Debug/LoanSys.exe" /pdbtype:sept 
+.\Debug\ListOpr.obj
+.\Debug\Loan.obj
+]
+Creating command line "link.exe @C:\Users\User\AppData\Local\Temp\RSP52E2.tmp"
+<h3>Output Window</h3>
+Compiling...
+Loan.cpp
+C:\Users\User\Desktop\LYK_LoanSys\LYK_LoanSys\LYK_LoanSys\src\Loan.cpp(340) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+C:\Users\User\Desktop\LYK_LoanSys\LYK_LoanSys\LYK_LoanSys\src\Loan.cpp(344) : warning C4804: '<' : unsafe use of type 'bool' in operation
+C:\Users\User\Desktop\LYK_LoanSys\LYK_LoanSys\LYK_LoanSys\src\Loan.cpp(348) : warning C4804: '<' : unsafe use of type 'bool' in operation
+Linking...
+
+
+
+<h3>Results</h3>
+LoanSys.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
