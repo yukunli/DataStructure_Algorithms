@@ -32,12 +32,6 @@ void main(int argc, char* argv[])
  返 回 值  : 无
  调用函数  :
  被调函数  :
-
- 修改历史      :
-  1.日    期   : 2010年1月21日
-    作    者   :
-    修改内容   : 新生成函数
-
 *****************************************************************************/
 void opInit(void)
 {
@@ -333,7 +327,6 @@ QueryResultNode * GetPayCostList(QueryResultNode* pHead)
 			{  
 				preNode->pNext = pNode->pNext;
 			}  
-			
 			free (pNode);      //释放当前节点  
 			pNode = NULL;
 
@@ -373,9 +366,7 @@ void Sortfee(QueryResultNode * pHead, int astNum)
 
 	QueryResultNode *pstItem1 = NULL;
 	QueryResultNode *pstItem2 = NULL;
-	QueryResultNode *pstTemp = NULL;
-
-	pstTemp = CreatList();
+	QueryResultNode  pstTemp = {0};
 	
 	while(NULL != pHead)
 	{
@@ -386,9 +377,9 @@ void Sortfee(QueryResultNode * pHead, int astNum)
 			pstItem2 = pstItem1->pNext;
 			if (pstItem1->data.Fee < pstItem2->data.Fee)
 			{
-				pstTemp->data = pstItem1->data;
+				pstTemp.data = pstItem1->data;
 				pstItem1->data = pstItem2->data;
-				pstItem2->data = pstTemp->data;	
+				pstItem2->data = pstTemp.data;	
 			}
 			pstItem2 = pstItem2->pNext;
 		}
